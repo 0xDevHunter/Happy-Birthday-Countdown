@@ -9,13 +9,13 @@ const refresh = document.getElementById('refresh');
 
 const currentYear = new Date().getFullYear();
 
-const birthday = new Date(`09,2024 ${currentYear} 00:00:00`);
+const birthday = new Date(`jan 09,2024 ${currentYear} 00:00:00`);
 
 const today = new Date();
 const currentDateTime = new Date(`${today.getMonth()} ${today.getDate()} ${currentYear}`);
 
 //JavaScript Ternary Operator
-const age = currentDateTime < birthday ? currentYear - 2011 - 1 : currentYear - 2011;
+const age = currentDateTime < birthday ? currentYear - 1999 - 1 : currentYear - 1999;
 
 // Set background year
 
@@ -33,7 +33,7 @@ function updateCountdown() {
   const now = new Date();
 
   //If birthday pass out
-  const nextBirthday = new Date(`09,2024 ${currentYear + 1} 00:00:00`)
+  const nextBirthday = new Date(`jan 09,2024 ${currentYear + 1} 00:00:00`)
   
   // JavaScript Ternary Operator 
   const timeSpan = (birthday < now) ? nextBirthday - now : birthday - now;
