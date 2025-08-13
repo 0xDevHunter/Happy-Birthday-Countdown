@@ -9,7 +9,7 @@ const refresh = document.getElementById('refresh');
 
 const currentYear = new Date().getFullYear();
 
-const birthday = new Date(`jan 09,2025 ${currentYear} 00:00:00`);
+const birthday = new Date(`jan 09,2026 ${currentYear} 00:00:00`);
 
 const today = new Date();
 const currentDateTime = new Date(`${today.getMonth()} ${today.getDate()} ${currentYear}`);
@@ -33,7 +33,7 @@ function updateCountdown() {
   const now = new Date();
 
   //If birthday pass out
-  const nextBirthday = new Date(`jan 09,2025 ${currentYear + 1} 00:00:00`)
+  const nextBirthday = new Date(`jan 09,2026 ${currentYear + 1} 00:00:00`)
   
   // JavaScript Ternary Operator 
   const timeSpan = (birthday < now) ? nextBirthday - now : birthday - now;
